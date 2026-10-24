@@ -93,7 +93,7 @@
       <div class="reveal">
         <h1>Federico<br><em>Fabrizio</em></h1>
         <p class="role" data-i18n="hero_role">Studente di Informatica · ITIS Enrico Fermi, Roma</p>
-        <p class="lead" data-i18n="hero_lead">Quarto anno di informatica, appassionato di tecnologia, reti e doppiaggio. Sto costruendo le basi per il mio futuro con lo studio e con la formazione artistica.</p>
+        <p class="lead" data-i18n="hero_lead">Quarto anno di informatica e formazione artistica nel doppiaggio: due passioni che si completano, tra la logica del codice e la precisione della voce.</p>
         <div class="hero-cta">
           <a class="pill solid" href="#formazione"><span data-i18n="cta_path">Il mio percorso</span> <svg class="ico ico-sm"><use href="#i-arrow-right"/></svg></a>
           <a class="pill" href="#attestati" data-i18n="cta_certs">Vedi gli attestati</a>
@@ -123,7 +123,7 @@
       <div class="reveal">
         <div class="info-title" data-i18n="info_name">Federico Fabrizio</div>
         <div class="info-role" data-i18n="info_role">Studente di informatica</div>
-        <p class="info-text muted" data-i18n="info_text">Frequento il quarto anno dell'ITIS Enrico Fermi di Roma, nell'articolazione informatica. Oltre allo studio seguo un corso di formazione artistica nel doppiaggio, che mi aiuta a lavorare su voce, espressione e ascolto. Dal novembre 2026 inizierò anche un corso Cisco Introduction to Networks (ITN) e un corso Oracle di database.</p>
+        <p class="info-text muted" data-i18n="info_text">Frequento il quarto anno dell'ITIS Enrico Fermi di Roma, nell'articolazione informatica. Accanto allo studio seguo un corso di formazione artistica nel doppiaggio, e vedo in queste due passioni un legame naturale: la precisione e la disciplina del doppiaggio, con il lavoro su tempi, ritmo e ascolto, somigliano molto alla logica e alla struttura della programmazione. Questo mi rende versatile: unisco competenze tecniche a buone capacità comunicative ed espressive. Dal novembre 2026 inizierò anche un corso Cisco Introduction to Networks (ITN) e un corso Oracle di database.</p>
 
         <div class="facts">
           <div class="fact">
@@ -169,10 +169,16 @@
                   <small>Email</small>
                   <strong>fabriziofederico.dev@gmail.com</strong>
                 </span>
-                <button class="copy-btn" id="copy-email" type="button" aria-label="Copia indirizzo email">
-                  <svg class="ico ico-xs copy-ico"><use href="#i-copy"/></svg>
-                  <span data-i18n="copy_btn">Copia</span>
-                </button>
+                <div class="email-actions">
+                  <button class="copy-btn" id="copy-email" type="button" aria-label="Copia indirizzo email">
+                    <svg class="ico ico-xs copy-ico"><use href="#i-copy"/></svg>
+                    <span data-i18n="copy_btn">Copia</span>
+                  </button>
+                  <a class="copy-btn contact-btn" href="mailto:fabriziofederico.dev@gmail.com">
+                    <svg class="ico ico-xs"><use href="#i-mail"/></svg>
+                    <span data-i18n="contact_btn">Contattami</span>
+                  </a>
+                </div>
               </div>
               <a class="contact-row" href="https://github.com/FedericoFabrizio" target="_blank" rel="noopener">
                 <span class="fact-ico"><svg class="ico ico-sm"><use href="#i-github"/></svg></span>
@@ -393,16 +399,16 @@ const T = {
     back_top: "Torna all'inizio",
     theme_to_light: "Passa alla versione chiara", theme_to_dark: "Passa alla versione scura",
     hero_role: "Studente di Informatica · ITIS Enrico Fermi, Roma",
-    hero_lead: "Quarto anno di informatica, appassionato di tecnologia, reti e doppiaggio. Sto costruendo le basi per il mio futuro con lo studio e con la formazione artistica.",
+    hero_lead: "Quarto anno di informatica e formazione artistica nel doppiaggio: due passioni che si completano, tra la logica del codice e la precisione della voce.",
     cta_path: "Il mio percorso", cta_certs: "Vedi gli attestati", scroll: "Scorri",
     info_kicker: "Info", info_title: "Informazioni", info_name: "Federico Fabrizio",
     info_role: "Studente di informatica",
-    info_text: "Frequento il quarto anno dell'ITIS Enrico Fermi di Roma, nell'articolazione informatica. Oltre allo studio seguo un corso di formazione artistica nel doppiaggio, che mi aiuta a lavorare su voce, espressione e ascolto. Dal novembre 2026 inizierò anche un corso Cisco Introduction to Networks (ITN) e un corso Oracle di database.",
+    info_text: "Frequento il quarto anno dell'ITIS Enrico Fermi di Roma, nell'articolazione informatica. Accanto allo studio seguo un corso di formazione artistica nel doppiaggio, e vedo in queste due passioni un legame naturale: la precisione e la disciplina del doppiaggio, con il lavoro su tempi, ritmo e ascolto, somigliano molto alla logica e alla struttura della programmazione. Questo mi rende versatile: unisco competenze tecniche a buone capacità comunicative ed espressive. Dal novembre 2026 inizierò anche un corso Cisco Introduction to Networks (ITN) e un corso Oracle di database.",
     photo_placeholder: "Foto da inserire",
     fact_name: "Nome", fact_birth: "Data di nascita", fact_birth_val: "25 dicembre 2009",
     fact_city: "Città", fact_school: "Scuola", fact_year: "Anno", fact_year_val: "4° superiore",
     fact_indirizzo: "Indirizzo", fact_indirizzo_val: "Informatica",
-    contacts_title: "Contatti", copy_btn: "Copia", copied_btn: "Copiato!",
+    contacts_title: "Contatti", copy_btn: "Copia", copied_btn: "Copiato!", contact_btn: "Contattami",
     edu_kicker: "Qualità", edu_title: "Formazione",
     edu_sub: "Il percorso scolastico e i corsi che sto seguendo. Le barre si aggiornano da sole in base alle date.",
     col_school: "Scuola e informatica", col_art: "Formazione artistica",
@@ -443,16 +449,16 @@ const T = {
     back_top: "Back to top",
     theme_to_light: "Switch to light version", theme_to_dark: "Switch to dark version",
     hero_role: "Computer Science student · ITIS Enrico Fermi, Rome",
-    hero_lead: "Fourth year of computer science, passionate about technology, networking and voice dubbing. I'm building the foundations for my future through my studies and artistic training.",
+    hero_lead: "Fourth year of computer science and artistic training in voice dubbing: two passions that complete each other, between code logic and vocal precision.",
     cta_path: "My path", cta_certs: "See certificates", scroll: "Scroll",
     info_kicker: "About", info_title: "About me", info_name: "Federico Fabrizio",
     info_role: "Computer Science student",
-    info_text: "I'm in my fourth year at ITIS Enrico Fermi in Rome, in the computer science track. Alongside my studies I'm following an artistic training course in voice dubbing, which helps me work on voice, expression and listening. From November 2026 I'll also start the Cisco Introduction to Networks (ITN) course and an Oracle database course.",
+    info_text: "I'm in my fourth year at ITIS Enrico Fermi in Rome, in the computer science track. Alongside my studies I'm training in voice dubbing, and I see a natural link between my two passions: the precision and discipline of dubbing, with its work on timing, rhythm and listening, closely resemble the logic and structure of programming. This makes me versatile: I combine technical skills with strong communication and expressive ability. From November 2026 I'll also start the Cisco Introduction to Networks (ITN) course and an Oracle database course.",
     photo_placeholder: "Photo to be added",
     fact_name: "Name", fact_birth: "Date of birth", fact_birth_val: "25 December 2009",
     fact_city: "City", fact_school: "School", fact_year: "Year", fact_year_val: "4th year of high school",
     fact_indirizzo: "Track", fact_indirizzo_val: "Computer Science",
-    contacts_title: "Contacts", copy_btn: "Copy", copied_btn: "Copied!",
+    contacts_title: "Contacts", copy_btn: "Copy", copied_btn: "Copied!", contact_btn: "Contact me",
     edu_kicker: "Qualifications", edu_title: "Education",
     edu_sub: "My school path and the courses I'm following. The bars update automatically based on the dates.",
     col_school: "School and computer science", col_art: "Artistic training",
