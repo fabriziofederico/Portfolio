@@ -165,7 +165,8 @@ header.at-top .crumbs { opacity: 0; pointer-events: none; }
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
 .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
-.email-actions { display: flex; gap: 6px; flex: none; }
+.email-actions { display: flex; align-items: center; gap: 6px; flex: none; }
+.or-sep { color: var(--muted); font-size: 0.8rem; font-weight: 600; font-style: italic; }
 .copy-btn { text-decoration: none; }
 .contact-btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .contact-btn:hover { color: var(--on-accent); filter: brightness(1.08); }
