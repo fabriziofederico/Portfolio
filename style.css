@@ -57,7 +57,7 @@ body {
   color: var(--text);
   line-height: 1.7;
   transition: background 0.4s, color 0.4s;
-  overflow-x: hidden;
+  overflow-x: clip;
   top: 0 !important;
   -webkit-font-smoothing: antialiased;
 }
@@ -522,4 +522,25 @@ footer strong { color: var(--heading); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* ============ SOLO TELEFONO: niente overflow orizzontale, meno peso grafico ============ */
+@media (max-width: 860px) {
+  /* gli sfondi sfocati costano molto su Android: li nascondo, la barra resta opaca */
+  .bg-blobs { display: none; }
+  header { background: var(--bg); backdrop-filter: none; -webkit-backdrop-filter: none; }
+  header.at-top { background: transparent; }
+  .hero { overflow-x: clip; }
+}
+@media (max-width: 600px) {
+  main { padding: 0 18px; }
+  .nav { padding: 12px 14px; }
+  section { padding: 64px 0; }
+  .avatar-ring { animation: none; inset: -8px; }
+  .hero h1 { font-size: clamp(2.6rem, 13vw, 3.4rem); }
+  /* email: pulsanti su una riga propria, sotto l'indirizzo, così il testo non si spezza lettera per lettera */
+  .contact-row { flex-wrap: wrap; }
+  .email-actions { flex-basis: 100%; padding-left: 48px; }
+  .lb-nav { width: 40px; height: 40px; }
+  .facts { gap: 10px; }
 }
